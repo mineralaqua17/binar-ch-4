@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("./partials/head") %> <%- include("./partials/form-script") %>
+
+    <title>BCR - Add Car</title>
+    <script src="./scripts/components/AddCarApp.js" defer></script>
+    <script src="./scripts/add.js" defer></script>
+  </head>
+  <body>
+    <%- include("./partials/nav") %>
+    <span class="form-overlay">
+      <span id="html-spinner"></span>
+    </span>
+    <main>
+      <header>
+        <ul class="nav-path">
+          <li>Cars</li>
+          <li>
+            <img src="img/icons/filepath.svg" alt="" />
+            <a href="/">List Car</a>
+          </li>
+          <li>
+            <img src="img/icons/filepath.svg" alt="" />
+            <a href="">Add New Car</a>
+          </li>
+        </ul>
+
+        <h1>Add New Car</h1>
+      </header>
+
+      <%- include("./partials/form") %>
+    </main>
+  </body>
+</html>
